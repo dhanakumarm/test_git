@@ -34,8 +34,8 @@
         $mode='Not Set...defaulting to master HEAD';
 
         $commands = array(
-        		'find . -type f -exec chmod 777 {} \;',
-        		'find . -type d -exec chmod 777 {} \;',
+        		'find . -type f -exec chmod 644 {} \;',
+        		'find . -type d -exec chmod 750 {} \;',
                 'echo $PWD',
                 'whoami',
                 'git fetch --all');
@@ -72,10 +72,10 @@
             $commands[]='git submodule status';
 //            $commands[]='find . -type f -exec chmod 440 {} \;';
 //            $commands[]='find . -type d -exec chmod 550 {} \;';     
-            $commands[]='chmod 777 ./assets ./protected/runtime';     
-            $commands[]='chmod 777 ./protected/runtime/*';
-            $commands[]='if [ -d "./protected/data" ]; then chmod 777 ./protected/data; chmod 777 ./protected/data/*; fi';     
-            $commands[]='if [ -d "./protected/upload_files" ]; then chmod 777 ./protected/upload_files; chmod 640 ./protected/upload_files/*; fi';  
+            $commands[]='chmod 750 ./assets ./protected/runtime';     
+            $commands[]='chmod 644 ./protected/runtime/*';
+            $commands[]='if [ -d "./protected/data" ]; then chmod 750 ./protected/data; chmod 644 ./protected/data/*; fi';     
+            $commands[]='if [ -d "./protected/upload_files" ]; then chmod 777 ./protected/upload_files; chmod 644 ./protected/upload_files/*; fi';  
         }
 
         // Run the commands for output
