@@ -11,6 +11,7 @@
 	$commands = array(
 		'echo $PWD',
 		'whoami',
+		'git checkout -f master',
 		'git pull',
 		'git status',
 		'git submodule sync',
