@@ -76,7 +76,6 @@
             $commands[]='chmod 640 ./protected/runtime/*';
             $commands[]='if [ -d "./protected/data" ]; then chmod 750 ./protected/data; chmod 640 ./protected/data/*; fi';     
             $commands[]='if [ -d "./protected/upload_files" ]; then chmod 777 ./protected/upload_files; chmod 640 ./protected/upload_files/*; fi';  
-            $commands[]='if [ -d "./ckfinder" ]; then chmod 777 ./ckfinder; chmod 777 ./ckfinder/*; fi';
         }
 
         // Run the commands for output
