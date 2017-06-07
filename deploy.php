@@ -35,7 +35,7 @@
 
         $commands = array(
         		'find . -type f -exec chmod 640 {} \;',
-        		'find . -type d -exec chmod 750 {} \;',
+        		'find . -type d -exec chmod 755 {} \;',
                 'echo $PWD',
                 'whoami',
                 'git fetch --all');
@@ -72,9 +72,9 @@
             $commands[]='git submodule status';
 //            $commands[]='find . -type f -exec chmod 440 {} \;';
 //            $commands[]='find . -type d -exec chmod 550 {} \;';     
-            $commands[]='chmod 750 ./assets ./protected/runtime';     
+            $commands[]='chmod 755 ./assets ./protected/runtime';     
             $commands[]='chmod 640 ./protected/runtime/*';
-            $commands[]='if [ -d "./protected/data" ]; then chmod 750 ./protected/data; chmod 640 ./protected/data/*; fi';     
+            $commands[]='if [ -d "./protected/data" ]; then chmod 755 ./protected/data; chmod 640 ./protected/data/*; fi';     
             $commands[]='if [ -d "./protected/upload_files" ]; then chmod 777 ./protected/upload_files; chmod 640 ./protected/upload_files/*; fi';  
         }
 
