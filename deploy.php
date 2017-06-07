@@ -70,8 +70,8 @@
             $commands[]='git submodule sync';
             $commands[]='git submodule update';
             $commands[]='git submodule status';
-            $commands[]='find . -type f -exec chmod 440 {} \;';
-            $commands[]='find . -type d -exec chmod 550 {} \;';     
+//            $commands[]='find . -type f -exec chmod 440 {} \;';
+//            $commands[]='find . -type d -exec chmod 550 {} \;';     
             $commands[]='chmod 750 ./assets ./protected/runtime';     
             $commands[]='chmod 640 ./protected/runtime/*';
             $commands[]='if [ -d "./protected/data" ]; then chmod 750 ./protected/data; chmod 640 ./protected/data/*; fi';     
