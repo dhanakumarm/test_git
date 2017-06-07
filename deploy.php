@@ -7,7 +7,7 @@
 	 *		https://gist.github.com/1809044
 	 */
 
-		/**
+	/**
           
          * This script is intended for deployments to test and production servers and only pulls code from the origin. 
          * The initial install of a deployment is a manual git clone from your choice of origin. 
